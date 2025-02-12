@@ -39,6 +39,7 @@ public class CustomGrab : MonoBehaviour
 
             if (grabbedObject)
             {
+
                 // Change these to add the delta position and rotation instead
                 // Save the position and rotation at the end of Update function, so you can compare previous pos/rot to current here
                 Vector3 deltaPosition = transform.position - prevPosition;
@@ -54,6 +55,7 @@ public class CustomGrab : MonoBehaviour
         // If let go of button, release object
         else if (grabbedObject)
             grabbedObject = null;
+
 
         // Should save the current position and rotation here
         prevPosition = transform.position;
